@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 8f8551178ffaf8f44b1914924ee2e1e0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_VisualTreeAsset: {fileID: 9197481963319205126, guid: 178e1222d650bdf4e8e6c16bb39bdd02,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Scripts/Editor/SkillTreeSettingsWindow.cs
+  uploadId: 758410

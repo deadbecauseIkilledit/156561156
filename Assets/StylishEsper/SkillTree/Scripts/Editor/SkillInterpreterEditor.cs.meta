@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cb2f3dde861db524f934acd7d03527ed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Scripts/Editor/SkillInterpreterEditor.cs
+  uploadId: 758410

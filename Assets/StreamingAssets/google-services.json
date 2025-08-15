@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "457351634030",
+    "project_id": "hitpoints-2932c",
+    "storage_bucket": "hitpoints-2932c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457351634030:android:0f698a2a237fe113521a7f",
+        "android_client_info": {
+          "package_name": "com.company.hitpoints"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsWZP-PNQ8Q8QQIEElqlpRkL32UK3pCSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 191f8a4309261de438c3121ac57b1546
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 6200000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Example/Characters/SkullSorcerer/NoFriction.physicsMaterial2D
+  uploadId: 758410

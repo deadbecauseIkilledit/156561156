@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 026243de042163d47b6f74d7da438e89
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Scripts/SkillTree.asmdef
+  uploadId: 758410

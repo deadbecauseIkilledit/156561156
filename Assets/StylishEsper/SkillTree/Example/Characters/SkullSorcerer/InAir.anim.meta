@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 29ba7a220689d354cb5b329d3b407b15
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Example/Characters/SkullSorcerer/InAir.anim
+  uploadId: 758410

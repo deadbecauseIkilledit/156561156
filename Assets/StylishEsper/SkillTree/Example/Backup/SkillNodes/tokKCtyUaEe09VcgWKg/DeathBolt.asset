@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41cc4bd271d8ce41982e82170ede062, type: 3}
+  m_Name: DeathBolt
+  m_EditorClassIdentifier: 
+  positionIndex: 31
+  graphReference: {fileID: 11400000, guid: 4e31b303407830f4fba98b7a53930141, type: 2}
+  key: DeathBolt
+  displayName: Death Bolt
+  description: Fire a bolt of death that travels in a straight line for {duration}s
+    and deals {stat1_value} {stat1_abbr} to every target it hits.
+  skillTypeIndex: 0
+  lockedSprite: {fileID: 21300000, guid: 040a8926779deb84d9894b1d68295490, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 239412a6585380148b695bd720d58d28, type: 3}
+  obtainedSprite: {fileID: 21300000, guid: 30d82d3541dac224ba52e48eb147183d, type: 3}
+  currentLevel: 1
+  maxLevel: 3
+  playerLevelRequirement: 1
+  treeTotalPointsSpentRequirement: 0
+  cooldown: 5
+  duration: 3
+  windupDuration: 0.6
+  isEffectOverTime: 0
+  effectDuration: 0
+  range: 0
+  speed: 5
+  isSingleTarget: 0
+  isCancelable: 0
+  uniqueShape: 0
+  uniqueSize: 100
+  isUnique: 0
+  state: 3
+  stats:
+  - identity:
+      name: Damage
+      abbreviation: DMG
+      type: 0
+      hasMin: 1
+      hasMax: 0
+      minValue: 0
+      maxValue: 0
+    baseValue: 20
+    combineType: 0
+    combineOperator: 0
+    initialValue: 20
+    scaling: 10
+    currentLevel: 1
+    maxLevel: 0
+    text: 

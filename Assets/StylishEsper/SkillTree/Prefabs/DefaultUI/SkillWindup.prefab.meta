@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 99bfe69883752584db0bd8d8fa840958
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Prefabs/DefaultUI/SkillWindup.prefab
+  uploadId: 758410

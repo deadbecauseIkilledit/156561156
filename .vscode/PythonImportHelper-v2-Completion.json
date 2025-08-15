@@ -1,0 +1,442 @@
+[
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "ctypes",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ctypes",
+        "description": "ctypes",
+        "detail": "ctypes",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "platform",
+        "description": "platform",
+        "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ElementTree",
+        "importPath": "xml.etree",
+        "description": "xml.etree",
+        "isExtraImport": true,
+        "detail": "xml.etree",
+        "documentation": {}
+    },
+    {
+        "label": "inspect",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "inspect",
+        "description": "inspect",
+        "detail": "inspect",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "xmltodict",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xmltodict",
+        "description": "xmltodict",
+        "detail": "xmltodict",
+        "documentation": {}
+    },
+    {
+        "label": "read_xml_value",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def read_xml_value(xml_node):\n  \"\"\"Utility method for reading values from the plist XML.\n  Args:\n    xml_node: An ElementTree node, that contains a value.\n  Returns:\n    The value of the node, or None, if it could not be read.\n  \"\"\"\n  if xml_node.tag == 'string':\n    return xml_node.text\n  elif xml_node.tag == 'integer':",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "construct_plist_dictionary",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def construct_plist_dictionary(xml_root):\n  \"\"\"Constructs a dictionary of values based on the contents of a plist file.\n  Args:\n    xml_root: An ElementTree node, that represents the root of the xml file\n              that is to be parsed.  (Which should be a dictionary containing\n              key-value pairs of the properties that need to be extracted.)\n  Returns:\n    A dictionary, containing key-value pairs for all (supported) entries in the\n    node.\n  \"\"\"",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "update_dict_keys",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def update_dict_keys(key_map, input_dict):\n  \"\"\"Creates a dict from input_dict with the same values but new keys.\n  Two dictionaries are passed to this function: the key_map that represents a\n  mapping of source keys to destination keys, and the input_dict that is the\n  dictionary that is to be duplicated, replacing any key that matches a source\n  key with a destination key. Source keys that are not present in the\n  input_dict will not have their destination key represented in the result.\n  In other words, if key_map is `{'old': 'new', 'foo': 'bar'}`, and input_dict\n  is `{'old': 10}`, the result will be `{'new': 10}`.\n  Args:",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "construct_google_services_json",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def construct_google_services_json(xml_dict):\n  \"\"\"Constructs a google services json file from a dictionary.\n  Args:\n    xml_dict: A dictionary of all the key/value pairs that are needed for the\n              output json file.\n  Returns:\n    A string representing the output json file.\n  \"\"\"\n  try:\n    json_struct = {",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "convert_plist_to_json",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def convert_plist_to_json(plist_string, input_filename):\n  \"\"\"Converts an input plist string into a .json file and saves it.\n  Args:\n    plist_string:    The contents of the loaded plist file.\n    input_filename:  The file name that the plist data was read from.\n  Returns:\n    the converted string, or None if there were errors.\n  \"\"\"\n  try:\n    root = ElementTree.fromstring(plist_string)",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "gen_string",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def gen_string(parent, name, text):\n  \"\"\"Generate one <string /> element and put into the list of keeps.\n  Args:\n    parent:  The object that will hold the string.\n    name:    The name to store the string under.\n    text:    The text of the string.\n  \"\"\"\n  if text:\n    prev = parent.get('tools:keep', '')\n    if prev:",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "indent",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def indent(elem, level=0):\n  \"\"\"Recurse through XML tree and add indentation.\n  Args:\n    elem:  The element to recurse over\n    level: The current indentation level.\n  \"\"\"\n  i = '\\n' + level*'  '\n  if elem is not None:\n    if not elem.text or not elem.text.strip():\n      elem.text = i + '  '",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "argv_as_unicode_win32",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def argv_as_unicode_win32():\n  \"\"\"Returns unicode command line arguments on windows.\n  \"\"\"\n  get_command_line_w = ctypes.cdll.kernel32.GetCommandLineW\n  get_command_line_w.restype = ctypes.wintypes.LPCWSTR\n  # CommandLineToArgvW parses the Unicode command line\n  command_line_to_argv_w = ctypes.windll.shell32.CommandLineToArgvW\n  command_line_to_argv_w.argtypes = [\n      ctypes.wintypes.LPCWSTR,\n      ctypes.POINTER(ctypes.c_int)",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "def main():\n  parser = argparse.ArgumentParser(\n      description=((\n          'Converts a Firebase %s into %s similar to the Gradle plugin, or '\n          'converts a Firebase %s into a %s suitible for use on desktop apps.' %\n          (DEFAULT_INPUT_FILENAME, DEFAULT_OUTPUT_FILENAME,\n           DEFAULT_PLIST_INPUT_FILENAME, DEFAULT_JSON_OUTPUT_FILENAME))))\n  parser.add_argument('-i', help='Override input file name',\n                      metavar='FILE', required=False)\n  parser.add_argument('-o', help='Override destination file name',",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "__author__",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "__author__ = 'Wouter van Oortmerssen'\nimport argparse\nimport ctypes\nimport json\nimport os\nimport platform\nimport sys\nfrom xml.etree import ElementTree\nif platform.system().lower() == 'windows':\n  import ctypes.wintypes  # pylint: disable=g-import-not-at-top",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_INPUT_FILENAME",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "DEFAULT_INPUT_FILENAME = 'app/google-services.json'\n# Output filename if it isn't set.\nDEFAULT_OUTPUT_FILENAME = 'res/values/googleservices.xml'\n# Input filename for .plist files, if it isn't set.\nDEFAULT_PLIST_INPUT_FILENAME = 'GoogleService-Info.plist'\n# Output filename for .json files, if it isn't set.\nDEFAULT_JSON_OUTPUT_FILENAME = 'google-services-desktop.json'\nOAUTH_CLIENT_TYPE_ANDROID_APP = 1\nOAUTH_CLIENT_TYPE_WEB = 3\ndef read_xml_value(xml_node):",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_OUTPUT_FILENAME",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "DEFAULT_OUTPUT_FILENAME = 'res/values/googleservices.xml'\n# Input filename for .plist files, if it isn't set.\nDEFAULT_PLIST_INPUT_FILENAME = 'GoogleService-Info.plist'\n# Output filename for .json files, if it isn't set.\nDEFAULT_JSON_OUTPUT_FILENAME = 'google-services-desktop.json'\nOAUTH_CLIENT_TYPE_ANDROID_APP = 1\nOAUTH_CLIENT_TYPE_WEB = 3\ndef read_xml_value(xml_node):\n  \"\"\"Utility method for reading values from the plist XML.\n  Args:",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_PLIST_INPUT_FILENAME",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "DEFAULT_PLIST_INPUT_FILENAME = 'GoogleService-Info.plist'\n# Output filename for .json files, if it isn't set.\nDEFAULT_JSON_OUTPUT_FILENAME = 'google-services-desktop.json'\nOAUTH_CLIENT_TYPE_ANDROID_APP = 1\nOAUTH_CLIENT_TYPE_WEB = 3\ndef read_xml_value(xml_node):\n  \"\"\"Utility method for reading values from the plist XML.\n  Args:\n    xml_node: An ElementTree node, that contains a value.\n  Returns:",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_JSON_OUTPUT_FILENAME",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "DEFAULT_JSON_OUTPUT_FILENAME = 'google-services-desktop.json'\nOAUTH_CLIENT_TYPE_ANDROID_APP = 1\nOAUTH_CLIENT_TYPE_WEB = 3\ndef read_xml_value(xml_node):\n  \"\"\"Utility method for reading values from the plist XML.\n  Args:\n    xml_node: An ElementTree node, that contains a value.\n  Returns:\n    The value of the node, or None, if it could not be read.\n  \"\"\"",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "OAUTH_CLIENT_TYPE_ANDROID_APP",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "OAUTH_CLIENT_TYPE_ANDROID_APP = 1\nOAUTH_CLIENT_TYPE_WEB = 3\ndef read_xml_value(xml_node):\n  \"\"\"Utility method for reading values from the plist XML.\n  Args:\n    xml_node: An ElementTree node, that contains a value.\n  Returns:\n    The value of the node, or None, if it could not be read.\n  \"\"\"\n  if xml_node.tag == 'string':",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "OAUTH_CLIENT_TYPE_WEB",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "description": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "peekOfCode": "OAUTH_CLIENT_TYPE_WEB = 3\ndef read_xml_value(xml_node):\n  \"\"\"Utility method for reading values from the plist XML.\n  Args:\n    xml_node: An ElementTree node, that contains a value.\n  Returns:\n    The value of the node, or None, if it could not be read.\n  \"\"\"\n  if xml_node.tag == 'string':\n    return xml_node.text",
+        "detail": "Assets.Firebase.Editor.generate_xml_from_google_services_json",
+        "documentation": {}
+    },
+    {
+        "label": "NetworkRequest",
+        "kind": 6,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "class NetworkRequest(object):\n  \"\"\"A container for an network request object.\n  This class holds on to all of the attributes necessary for making a\n  network request via httplib.\n  \"\"\"\n  def __init__(self, url, method, headers, body, timeout):\n    self.url = url.lower()\n    self.parsed_url = urlparse(self.url)\n    self.method = method\n    self.headers = headers",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "unwrap_kwarg_namespace",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "def unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.\n  For a function that will be delegated to from argparse, inspect all of the\n  argments and extract them from the Namespace object.\n  Args:\n    func: the function that we are wrapping to modify behavior\n  Returns:\n    a new function that unwraps all of the arguments in a namespace and then\n    delegates to the passed function with those args.\n  \"\"\"",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "parse_colon_delimited_options",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "def parse_colon_delimited_options(option_args):\n  \"\"\"Parses a key value from a string.\n  Args:\n      option_args: Key value string delimited by a color, ex: (\"key:value\")\n  Returns:\n      Return an array with the key as the first element and value as the second\n  Raises:\n      ValueError: If the key value option is not formatted correctly\n  \"\"\"\n  options = {}",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "make_request",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "def make_request(request):\n  \"\"\"Makes a synchronous network request and return the HTTP status code.\n  Args:\n    request: a well formulated request object\n  Returns:\n    The HTTP status code of the network request.\n    '1' maps to invalid request headers.\n  \"\"\"\n  logger.info('Sending network request -')\n  logger.info('\\tUrl: %s', request.url)",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "post",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "def post(url=None, header=None, body=None, timeout=5, verbose=False):\n  \"\"\"Sends a post request.\n  Args:\n      url: The url of the request\n      header: A list of headers for the request\n      body: The body for the request\n      timeout: Timeout in seconds for the request\n      verbose: Should debug logs be displayed\n  Returns:\n      Return an array with the key as the first element and value as the second",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "get_argsparser",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "def get_argsparser():\n  \"\"\"Returns the argument parser.\n  Returns:\n    Argument parser for the script.\n  \"\"\"\n  parser = argparse.ArgumentParser(\n      description='The script takes in the arguments of a network request. '\n      'The network request is sent and the http status code will be'\n      'returned as the exit code.')\n  subparsers = parser.add_subparsers(help='Commands:')",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "map_http_status_to_exit_code",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "def map_http_status_to_exit_code(status_code):\n  \"\"\"Map an http status code to the appropriate exit code.\n  Exit codes in python are valid from 0-256, so we want to map these to\n  predictable exit codes within range.\n  Args:\n    status_code: the input status code that was output from the network call\n                 function\n  Returns:\n    One of our valid exit codes declared at the top of the file or a generic\n    unknown error code",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "def main():\n  \"\"\"Main function to run the program.\n  Parse system arguments and delegate to the appropriate function.\n  Returns:\n    A status code - either an http status code or a custom error code\n  \"\"\"\n  parser = get_argsparser()\n  subparser_action = parser.parse_args()\n  try:\n    return subparser_action.func(subparser_action)",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "formatter",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "formatter = logging.Formatter('[%(levelname)s] %(message)s')\nhandler = logging.StreamHandler(stream=sys.stdout)\nhandler.setFormatter(formatter)\nhandler.setLevel(logging.INFO)\nlogger = logging.getLogger(__name__)\nlogger.addHandler(handler)\nlogger.setLevel(logging.INFO)\n# Custom exit codes for known issues.\n# System exit codes in python are valid from 0 - 256, so we will map some common\n# ones here to understand successes and failures.",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "handler",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "handler = logging.StreamHandler(stream=sys.stdout)\nhandler.setFormatter(formatter)\nhandler.setLevel(logging.INFO)\nlogger = logging.getLogger(__name__)\nlogger.addHandler(handler)\nlogger.setLevel(logging.INFO)\n# Custom exit codes for known issues.\n# System exit codes in python are valid from 0 - 256, so we will map some common\n# ones here to understand successes and failures.\n# Uses lower ints to not collide w/ HTTP status codes that the script may return",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nlogger.addHandler(handler)\nlogger.setLevel(logging.INFO)\n# Custom exit codes for known issues.\n# System exit codes in python are valid from 0 - 256, so we will map some common\n# ones here to understand successes and failures.\n# Uses lower ints to not collide w/ HTTP status codes that the script may return\nEXIT_CODE_SUCCESS = 0\nEXIT_CODE_SYS_ERROR = 1\nEXIT_CODE_INVALID_REQUEST_VALUES = 2",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_SUCCESS",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_SUCCESS = 0\nEXIT_CODE_SYS_ERROR = 1\nEXIT_CODE_INVALID_REQUEST_VALUES = 2\nEXIT_CODE_GENERIC_HTTPLIB_ERROR = 3\nEXIT_CODE_HTTP_TIMEOUT = 4\nEXIT_CODE_HTTP_REDIRECT_ERROR = 5\nEXIT_CODE_HTTP_NOT_FOUND_ERROR = 6\nEXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_SYS_ERROR",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_SYS_ERROR = 1\nEXIT_CODE_INVALID_REQUEST_VALUES = 2\nEXIT_CODE_GENERIC_HTTPLIB_ERROR = 3\nEXIT_CODE_HTTP_TIMEOUT = 4\nEXIT_CODE_HTTP_REDIRECT_ERROR = 5\nEXIT_CODE_HTTP_NOT_FOUND_ERROR = 6\nEXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_INVALID_REQUEST_VALUES",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_INVALID_REQUEST_VALUES = 2\nEXIT_CODE_GENERIC_HTTPLIB_ERROR = 3\nEXIT_CODE_HTTP_TIMEOUT = 4\nEXIT_CODE_HTTP_REDIRECT_ERROR = 5\nEXIT_CODE_HTTP_NOT_FOUND_ERROR = 6\nEXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_GENERIC_HTTPLIB_ERROR",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_GENERIC_HTTPLIB_ERROR = 3\nEXIT_CODE_HTTP_TIMEOUT = 4\nEXIT_CODE_HTTP_REDIRECT_ERROR = 5\nEXIT_CODE_HTTP_NOT_FOUND_ERROR = 6\nEXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'\ndef unwrap_kwarg_namespace(func):",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_HTTP_TIMEOUT",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_HTTP_TIMEOUT = 4\nEXIT_CODE_HTTP_REDIRECT_ERROR = 5\nEXIT_CODE_HTTP_NOT_FOUND_ERROR = 6\nEXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'\ndef unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_HTTP_REDIRECT_ERROR",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_HTTP_REDIRECT_ERROR = 5\nEXIT_CODE_HTTP_NOT_FOUND_ERROR = 6\nEXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'\ndef unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.\n  For a function that will be delegated to from argparse, inspect all of the",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_HTTP_NOT_FOUND_ERROR",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_HTTP_NOT_FOUND_ERROR = 6\nEXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'\ndef unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.\n  For a function that will be delegated to from argparse, inspect all of the\n  argments and extract them from the Namespace object.",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_HTTP_SERVER_ERROR",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_HTTP_SERVER_ERROR = 7\nEXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'\ndef unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.\n  For a function that will be delegated to from argparse, inspect all of the\n  argments and extract them from the Namespace object.\n  Args:",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "EXIT_CODE_HTTP_UNKNOWN_ERROR",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "EXIT_CODE_HTTP_UNKNOWN_ERROR = 8\nMAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'\ndef unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.\n  For a function that will be delegated to from argparse, inspect all of the\n  argments and extract them from the Namespace object.\n  Args:\n    func: the function that we are wrapping to modify behavior",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_EXIT_CODE",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "MAX_EXIT_CODE = 8\n# All used http verbs\nPOST = 'POST'\ndef unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.\n  For a function that will be delegated to from argparse, inspect all of the\n  argments and extract them from the Namespace object.\n  Args:\n    func: the function that we are wrapping to modify behavior\n  Returns:",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    },
+    {
+        "label": "POST",
+        "kind": 5,
+        "importPath": "Assets.Firebase.Editor.network_request",
+        "description": "Assets.Firebase.Editor.network_request",
+        "peekOfCode": "POST = 'POST'\ndef unwrap_kwarg_namespace(func):\n  \"\"\"Transform a Namespace object from argparse into proper args and kwargs.\n  For a function that will be delegated to from argparse, inspect all of the\n  argments and extract them from the Namespace object.\n  Args:\n    func: the function that we are wrapping to modify behavior\n  Returns:\n    a new function that unwraps all of the arguments in a namespace and then\n    delegates to the passed function with those args.",
+        "detail": "Assets.Firebase.Editor.network_request",
+        "documentation": {}
+    }
+]

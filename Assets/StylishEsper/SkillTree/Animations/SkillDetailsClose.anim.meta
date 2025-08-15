@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8016ebabd6e9b2147a94bde20b54d889
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Animations/SkillDetailsClose.anim
+  uploadId: 758410

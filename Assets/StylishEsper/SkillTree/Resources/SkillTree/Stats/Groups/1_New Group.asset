@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf6d8939ca15b544b2b05e4943333b2, type: 3}
+  m_Name: 1_New Group
+  m_EditorClassIdentifier: 
+  id: 1
+  displayName: New Group
+  defaultNumericType: 0
+  defaultValueType: 0
+  defaultHasMin: 0
+  defaultHasMax: 0
+  defaultMinFloatValue: 0
+  defaultMaxFloatValue: 0
+  defaultMinIntegerValue: 0
+  defaultMaxIntegerValue: 0
+  statIdentities:
+  - {fileID: 11400000, guid: 2ed6d97f9e42bb142b59f99217fea4cf, type: 2}
+  - {fileID: 11400000, guid: 28009d3a3de02594bada2896fc002e4f, type: 2}

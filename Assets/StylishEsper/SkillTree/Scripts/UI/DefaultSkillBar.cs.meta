@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9aa1c598ca399f445aaad306e40d02a4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Scripts/UI/DefaultSkillBar.cs
+  uploadId: 758410

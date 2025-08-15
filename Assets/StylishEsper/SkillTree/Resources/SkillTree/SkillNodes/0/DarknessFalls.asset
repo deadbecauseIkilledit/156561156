@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41cc4bd271d8ce41982e82170ede062, type: 3}
+  m_Name: DarknessFalls
+  m_EditorClassIdentifier: 
+  positionIndex: 3
+  graphReference: {fileID: 11400000, guid: db8ed8f9109635042a01c22fc0a54234, type: 2}
+  key: DarknessFalls
+  displayName: Darkness Falls
+  description: Jump high up and drop back down, causing a dark energy shockwave,
+    dealing {stat1_value} {stat1_abbr} to all targets in the area.
+  skillTypeIndex: 0
+  lockedSprite: {fileID: 21300000, guid: 1b22fa597bd00f143bf18b654f074e14, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 0ba216b12c14d2d478e264f891a956ef, type: 3}
+  obtainedSprite: {fileID: 21300000, guid: 94a24620bfc454149a8d95b42128bf42, type: 3}
+  currentLevel: 0
+  maxLevel: 1
+  playerLevelRequirement: 0
+  treeTotalPointsSpentRequirement: 7
+  cooldown: 22
+  duration: 0
+  windupDuration: 1.35
+  isEffectOverTime: 0
+  effectDuration: 0
+  range: 20
+  speed: 6
+  cost: 0
+  isSingleTarget: 0
+  isCancelable: 0
+  uniqueShape: 2
+  uniqueSize: 125
+  isUnique: 1
+  customObject: {fileID: 0}
+  state: 0
+  stats:
+  - initialValue:
+      value:
+        integerValue: 0
+        floatValue: 200
+    currentValue:
+      value:
+        integerValue: 0
+        floatValue: 0
+    externalValue:
+      value:
+        integerValue: 0
+        floatValue: 0
+    scaling:
+      value:
+        integerValue: 0
+        floatValue: 0
+    currentLevel: 0
+    maxLevel: 0
+    combineType: 0
+    combineOperator: 0
+    statID: 1
+    identity: {fileID: 11400000, guid: 7ccc495b8fd128d4d948288f8358002f, type: 2}

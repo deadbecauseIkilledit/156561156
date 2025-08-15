@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec57cbedcc9204b86b9ce486fb8733, type: 3}
+  m_Name: SkillTreeSettings
+  m_EditorClassIdentifier: 
+  skillTypes:
+  - Active
+  - Passive
+  allowDowngrade: 1
+  changesRequireConfirmation: 1
+  strictStatValueTypes: 0
+  maxUnitLevel: 100

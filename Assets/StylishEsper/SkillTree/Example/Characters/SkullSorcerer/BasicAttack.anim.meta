@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4ccb3bcae3225584388478a0cac83e37
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Example/Characters/SkullSorcerer/BasicAttack.anim
+  uploadId: 758410

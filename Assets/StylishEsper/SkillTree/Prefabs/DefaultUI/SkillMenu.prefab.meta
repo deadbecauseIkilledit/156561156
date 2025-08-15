@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 895780c9dc1d9d34f878caded892cf7e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Prefabs/DefaultUI/SkillMenu.prefab
+  uploadId: 758410

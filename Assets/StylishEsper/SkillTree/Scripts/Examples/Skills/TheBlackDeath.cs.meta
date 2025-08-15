@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5f8b44788d402ba43983c981cd1dd452
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Scripts/Examples/Skills/TheBlackDeath.cs
+  uploadId: 758410

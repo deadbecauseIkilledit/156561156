@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/StylishEsper/SkillTree/Scripts/Editor/SkillStatsEditor.uss?fileID=7433441132597879392&amp;guid=fe6b2a964f302a34a9996c0a5d1b2887&amp;type=3#SkillStatsEditor" />
+    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SkillNameLabel" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+    <ui:ListView show-border="true" reorderable="true" show-foldout-header="false" header-title="Stats" show-add-remove-footer="true" reorder-mode="Animated" name="StatsList" virtualization-method="DynamicHeight" style="flex-grow: 1;" />
+</ui:UXML>

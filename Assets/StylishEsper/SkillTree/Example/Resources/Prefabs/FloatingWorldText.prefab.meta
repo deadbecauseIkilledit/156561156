@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8206b6cd58bcdff4d9bab09364f61bd9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Example/Resources/Prefabs/FloatingWorldText.prefab
+  uploadId: 758410

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 80f78c8fe370f9747927bf6aa71bb48c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Resources/SkillTree/Stats/Identities/0_Health.asset
+  uploadId: 758410

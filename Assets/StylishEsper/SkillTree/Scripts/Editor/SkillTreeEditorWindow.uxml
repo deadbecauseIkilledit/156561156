@@ -1,0 +1,101 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/StylishEsper/SkillTree/Scripts/Editor/SkillTreeEditorWindow.uss?fileID=7433441132597879392&amp;guid=e5a8faa83bf626243822b92daef7b028&amp;type=3#SkillTreeEditorWindow" />
+    <uie:Toolbar style="justify-content: flex-end;">
+        <uie:ToolbarButton text="Documentation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OpenDocsButton" style="left: auto; -unity-text-align: middle-center;" />
+    </uie:Toolbar>
+    <Esper.SkillTree.Editor.SplitView orientation="Vertical" fixed-pane-initial-dimension="400" name="SplitViewMain" picking-mode="Ignore" style="flex-shrink: 1; visibility: visible;">
+        <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1; visibility: visible; display: flex; overflow: visible; opacity: 1;">
+            <ui:VisualElement style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: center; align-items: center;">
+                <ui:VisualElement name="Graph" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-left-color: rgba(0, 0, 0, 0.5); border-right-color: rgba(0, 0, 0, 0.5); border-top-color: rgba(0, 0, 0, 0.5); border-bottom-color: rgba(0, 0, 0, 0.5); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgba(0, 0, 0, 0.5); align-items: flex-start; flex-shrink: 0; width: auto;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <Esper.SkillTree.Editor.SplitView orientation="Horizontal" fixed-pane-initial-dimension="200" name="SplitViewMenu" style="position: relative; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+            <ui:VisualElement style="flex-grow: 1; width: 200px;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row; max-height: 28px; border-bottom-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.5); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddButton" tooltip="Create New Tree" style="height: 24px; width: 24px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;">
+                        <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/StylishEsper/SkillTree/Editor/Icons/icon_plus.png?fileID=2800000&amp;guid=835e07ad2cf0f704a88700b3baea82e1&amp;type=3#icon_plus&quot;); flex-shrink: 0;" />
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DuplicateButton" tooltip="Duplicate Tree" style="height: 24px; width: 24px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;">
+                        <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/StylishEsper/SkillTree/Editor/Icons/icon_copy.png?fileID=2800000&amp;guid=3750c141d32bf9d4a9bfb0841350634c&amp;type=3#icon_copy&quot;); flex-shrink: 0;" />
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DeleteButton" tooltip="Delete Tree" style="height: 24px; width: 24px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; background-color: rgb(181, 69, 69); margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;">
+                        <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/StylishEsper/SkillTree/Editor/Icons/icon_delete.png?fileID=2800000&amp;guid=4190f9dbc6e0c2b43ad0ef3190e695d2&amp;type=3#icon_delete&quot;); flex-shrink: 0;" />
+                    </ui:Button>
+                    <ui:VisualElement style="flex-grow: 1; max-width: 20px;" />
+                    <ui:EnumField type="Esper.SkillTree.Editor.SkillTreeEditorWindow+TreeVisibility, SkillTree" name="TreeVisibilityField" style="flex-shrink: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; align-self: auto; align-items: stretch; justify-content: flex-end; overflow: hidden; min-width: 90px; max-width: 90px;" />
+                </ui:VisualElement>
+                <ui:ScrollView>
+                    <ui:VisualElement name="TreeList" style="flex-grow: 1; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                <ui:VisualElement style="flex-grow: 1; border-left-color: rgba(0, 0, 0, 0.5); border-right-color: rgba(0, 0, 0, 0.5); border-top-color: rgba(0, 0, 0, 0.5); border-bottom-color: rgba(0, 0, 0, 0.5); border-bottom-width: 1px; height: auto; max-height: 28px; flex-shrink: 0;">
+                    <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 14px; border-left-color: rgba(0, 0, 0, 0.5); border-right-color: rgba(0, 0, 0, 0.5); border-top-color: rgba(0, 0, 0, 0.5); border-bottom-color: rgba(0, 0, 0, 0.5); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; padding-top: 4.5px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                </ui:VisualElement>
+                <ui:ScrollView>
+                    <ui:VisualElement name="Inspector" style="flex-grow: 1; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;">
+                        <ui:VisualElement name="TreeProperties" style="flex-grow: 1; visibility: visible; display: none;">
+                            <ui:Label tabindex="-1" text="&lt;u&gt;Skill Tree&lt;/u&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SkillTreeLabel" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Toggle label="Enabled" name="TreeEnabledField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Toggle label="For Player" name="ForPlayerField" value="true" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:EnumField label="Visibility" type="Esper.SkillTree.SkillGraph+GraphVisibility, SkillTree" include-obsolete-values="false" name="GraphVisibilityField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:TextField picking-mode="Ignore" label="Name" name="TreeNameField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Label tabindex="-1" text="WARNING: Changing dimensions will affect the positions of each node and may break connections." parse-escape-sequences="true" display-tooltip-when-elided="true" name="DimensionsWarning" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(255, 0, 0);" />
+                            <ui:VisualElement style="flex-grow: 1; flex-direction: row; flex-shrink: 0;">
+                                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DimensionsLockButton" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 20px; height: 20px; background-image: url(&quot;project://database/Assets/StylishEsper/SkillTree/Editor/Icons/lock_icon.png?fileID=2800000&amp;guid=106089b6b37081848a8c283726cfd787&amp;type=3#lock_icon&quot;);" />
+                                <ui:Vector2IntField label="Dimensions" name="TreeDimensionsField" focusable="true" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; opacity: 1; visibility: visible; overflow: hidden; flex-grow: 1;" />
+                            </ui:VisualElement>
+                            <ui:FloatField label="Node Size" value="0" name="NodeSizeField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:EnumField label="Node Shape" type="Esper.SkillTree.SkillNode+Shape, SkillTree" include-obsolete-values="false" name="NodeShapeField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <uie:ObjectField label="Custom Object" name="TreeCustomObjectField" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="NodeProperties" style="flex-grow: 1; display: flex;">
+                            <ui:Label tabindex="-1" text="&lt;u&gt;Skill&lt;/u&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SkillLabel" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Label tabindex="-1" text="General" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(153, 153, 153);" />
+                            <ui:IntegerField label="Position Index" value="0" name="NodePositionField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:TextField picking-mode="Ignore" label="Key" name="NodeKeyField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:TextField picking-mode="Ignore" label="Display Name" name="NodeNameField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:TextField picking-mode="Ignore" label="Description" name="NodeDescriptionField" multiline="true" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; white-space: normal;" />
+                            <ui:DropdownField label="Skill Type" name="NodeTypeField" index="0" />
+                            <ui:IntegerField label="Max Level" value="1" name="NodeMaxLevelField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Toggle label="Single Target" name="NodeSingleTargetField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Toggle label="Cancelable" name="NodeCancelableField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:FloatField label="Range" value="0" name="NodeRangeField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:FloatField label="Speed" value="0" name="NodeSpeedField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:FloatField label="Cost" value="0" name="NodeCostField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Label tabindex="-1" text="Sprites" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" style="margin-top: 12px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(153, 153, 153);" />
+                            <uie:ObjectField label="Locked Sprite" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="NodeLockedSpriteField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; flex-shrink: 1; overflow: hidden; opacity: 1;" />
+                            <uie:ObjectField label="Unlocked Sprite" name="NodeUnlockedSpriteField" type="UnityEngine.Sprite, UnityEngine.CoreModule" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; flex-shrink: 1; overflow: hidden;" />
+                            <uie:ObjectField label="Obtained Sprite" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="NodeObtainedSpriteField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; flex-shrink: 1;" />
+                            <ui:Label tabindex="-1" text="Requirements" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" style="margin-top: 12px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(153, 153, 153);" />
+                            <ui:IntegerField label="Unlock Lvl Req." value="1" name="NodeLevelRequirementField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:IntegerField label="Total Points In Tree Req." value="1" name="NodeTotalPointsRequirementField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Label tabindex="-1" text="Time" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" style="margin-top: 12px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(153, 153, 153);" />
+                            <ui:FloatField label="Cooldown" value="0" name="NodeCooldownField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:FloatField label="Duration" value="0" name="NodeDurationField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:FloatField label="Windup" value="0" name="NodeWindupField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Toggle label="Effect Over Time" name="NodeEOTField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:FloatField label="Effect Duration" value="0" name="NodeEffectDurationField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Label tabindex="-1" text="Stats" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" style="margin-top: 12px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(153, 153, 153);" />
+                            <ui:Button text="Open Stats Editor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OpenStatsButton" />
+                            <ui:Label tabindex="-1" text="Other" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" style="margin-top: 12px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(153, 153, 153);" />
+                            <ui:Toggle label="Unique" name="NodeUniqueField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:FloatField label="Unique Size" value="0" name="NodeUniqueSizeField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:EnumField label="Unique Shape" type="Esper.SkillTree.SkillNode+Shape, SkillTree" include-obsolete-values="false" name="NodeUniqueShapeField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <uie:ObjectField label="Custom Object" name="NodeCustomObjectField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Label tabindex="-1" text="Danger Zone" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" style="margin-top: 12px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(255, 0, 0); -unity-font-style: bold;" />
+                            <ui:Button text="Delete Node" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DeleteNodeButton" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="ConnectionProperties" style="flex-grow: 1; display: none;">
+                            <ui:Label tabindex="-1" text="&lt;u&gt;Connection&lt;/u&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ConnectionMessage" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Toggle label="Two Way" name="TwoWayField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Button text="Switch Direction" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SwitchDirectionButton" enable-rich-text="true" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                            <ui:Button text="Delete" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DeleteConnectionButton" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </Esper.SkillTree.Editor.SplitView>
+    </Esper.SkillTree.Editor.SplitView>
+</ui:UXML>

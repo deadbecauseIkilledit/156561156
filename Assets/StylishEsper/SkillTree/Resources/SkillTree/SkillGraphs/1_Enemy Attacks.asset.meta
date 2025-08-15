@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d1281101cb6a96c498829b39673cc840
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Resources/SkillTree/SkillGraphs/1_Enemy
+    Attacks.asset
+  uploadId: 758410

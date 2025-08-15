@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/StylishEsper/SkillTree/Scripts/Editor/StatsEditorWindow.uss?fileID=7433441132597879392&amp;guid=98be0d3c1acee7b42b9727995d6e010a&amp;type=3#StatsEditorWindow" />
+    <uie:Toolbar style="justify-content: flex-end; height: 24px;">
+        <ui:EnumField type="Esper.SkillTree.Editor.StatsEditorWindow+NumericTypeFilter, SkillTree" name="NumericTypeFilter" style="min-width: 75px;" />
+        <ui:EnumField type="Esper.SkillTree.Editor.StatsEditorWindow+ValueTypeFilter, SkillTree" name="ValueTypeFilter" style="min-width: 75px;" />
+        <uie:ToolbarSearchField name="SearchField" />
+    </uie:Toolbar>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1; max-width: 30%; min-width: 30%; border-right-color: rgb(0, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+            <ui:ScrollView style="flex-grow: 1;">
+                <ui:VisualElement name="StatList" style="flex-grow: 1; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+            </ui:ScrollView>
+            <ui:Button text="Create New Group" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CreateGroupButton" style="margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement name="InspectorContent" style="flex-grow: 1;">
+                <ui:ScrollView style="flex-grow: 1; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px;">
+                    <ui:Label tabindex="-1" text="Stat" parse-escape-sequences="true" display-tooltip-when-elided="true" name="InspectorLabel" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(144, 144, 144);" />
+                    <ui:IntegerField label="ID" value="0" name="IDField" readonly="true" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:TextField picking-mode="Ignore" label="Display Name" name="DisplayNameField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:TextField picking-mode="Ignore" label="Abbreviation" name="AbbreviationField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:Label tabindex="-1" text="Stat Defaults" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DefaultsLabel" style="margin-top: 16px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; color: rgb(144, 144, 144);" />
+                    <ui:EnumField label="Numeric Type" type="Esper.SkillTree.Stats.StatValue+NumericType, SkillTree" name="NumericTypeField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:EnumField label="Value Type" type="Esper.SkillTree.Stats.StatValue+ValueType, SkillTree" name="ValueTypeField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:Toggle label="Has Min" name="HasMinToggle" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:FloatField label="Min" value="0" name="MinFloatField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:IntegerField label="Min" value="0" name="MinIntegerField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:Toggle label="Has Max" name="HasMaxToggle" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:FloatField label="Max" value="0" name="MaxFloatField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:IntegerField label="Max" value="0" name="MaxIntegerField" style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;" />
+                    <ui:Button text="Delete" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DeleteButton" style="margin-top: 32px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; background-color: rgb(152, 25, 25); width: 50%; align-self: center; color: rgb(255, 255, 255);" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

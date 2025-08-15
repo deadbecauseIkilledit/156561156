@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e897c29980b228045b9734a6439fe05d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Example/Resources/Prefabs/StatusCanvas.prefab
+  uploadId: 758410

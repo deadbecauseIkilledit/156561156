@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e46196d7869e7c0468c9d78bdd2e9106
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Prefabs/DefaultUI/SkillNodeSlot.prefab
+  uploadId: 758410

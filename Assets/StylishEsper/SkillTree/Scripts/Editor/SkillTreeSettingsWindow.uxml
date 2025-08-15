@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/StylishEsper/SkillTree/Scripts/Editor/SkillTreeSettingsWindow.uss?fileID=7433441132597879392&amp;guid=f0d0d0f7faa12cf488822357d89c3da0&amp;type=3#SkillTreeSettingsWindow" />
+    <ui:VisualElement style="flex-grow: 1; max-height: 20px; min-height: 20px; border-bottom-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.5);" />
+    <ui:ScrollView style="flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+        <ui:VisualElement name="Content" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Skill Tree Options" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 16px; margin-bottom: 4px; color: rgb(154, 154, 154);" />
+                <ui:Toggle label="Allow Downgrade" name="AllowDowngradeField" />
+                <ui:Toggle label="Changes Require Confirmation" name="ConfirmationField" />
+                <ui:Label tabindex="-1" text="Skill Types" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 14px; margin-bottom: 4px; margin-top: 16px;" />
+                <ui:VisualElement name="SkillTypesContent" style="flex-grow: 1;" />
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row;">
+                    <ui:Button text="Add" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddTypeButton" />
+                    <ui:Button text="Delete" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DeleteTypeButton" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                <ui:Label tabindex="-1" text="Stat Options" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-top: 16px; margin-bottom: 4px; -unity-font-style: bold; font-size: 16px; color: rgb(154, 154, 154);" />
+                <ui:IntegerField label="Max Unit Level" value="100" name="MaxLevelField" binding-path="settings.maxUnitLevel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

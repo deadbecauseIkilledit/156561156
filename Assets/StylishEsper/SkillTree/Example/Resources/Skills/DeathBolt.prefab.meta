@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d506ea34d80ba724a98b95126e0f49e1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Example/Resources/Skills/DeathBolt.prefab
+  uploadId: 758410

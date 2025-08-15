@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bab00c45f12c2194fabde6be41d1aff8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293697
+  packageName: Skill Tree - Skills & Stats
+  packageVersion: 1.2.2
+  assetPath: Assets/StylishEsper/SkillTree/Animations/SkillDetails.controller
+  uploadId: 758410
